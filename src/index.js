@@ -2,23 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 function Booklist() {
-  return <article></article>;
+  return (
+    <article>
+      <Books />
+    </article>
+  );
 }
 
-const books = () => {
-  return <section>books</section>;
+const Books = () => {
+  return (
+    <section>
+      <Title />
+      <Author />
+      <Image />
+    </section>
+  );
 };
 
-const image = () => {
+const Image = () => {
   return <img src="" alt="" />;
 };
 
-const title = () => {
+const Title = () => {
   return <h1>title</h1>;
 };
 
-const author = () => <h4>author</h4>;
+const Author = () => <h4>author</h4>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Greeting />);
+root.render(<Booklist />);
