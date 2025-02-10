@@ -5,18 +5,18 @@ import "./index.css";
 
 function Booklist() {
   return (
-    <article>
+    <section className="booklist">
       <Books />
       <Books />
       <Books />
       <Books />
-    </article>
+    </section>
   );
 }
 
 const Books = () => {
   return (
-    <section>
+    <section className="book">
       <Title />
       <Image />
       <Author />
