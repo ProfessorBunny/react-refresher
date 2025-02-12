@@ -9,7 +9,6 @@ function Booklist() {
       <Books />
       <Books />
       <Books />
-      <Books />
     </section>
   );
 }
