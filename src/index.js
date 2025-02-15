@@ -12,8 +12,11 @@ function Booklist() {
     </section>
   );
 }
+const author = "Jordan Moore";
 
 const Books = () => {
+  const title = "Interesting Facts For Curious Mindssssss";
+
   return (
     <>
       <h1>INNER EXCELLENCE</h1>;
