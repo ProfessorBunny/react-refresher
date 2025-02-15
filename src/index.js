@@ -12,20 +12,20 @@ function Booklist() {
     </section>
   );
 }
+
 const author = "Jordan Moore";
-
 const Books = () => {
-  const title = "INNER EXCELLENCE";
-
+  const title = "Interesting Facts For Curious Mindssssss";
   return (
-    <>
-      <h1>{title}</h1>;
+    <article className="book">
       <img
         src="https://m.media-amazon.com/images/I/41OPosUIEhL._SY445_SX342_.jpg"
-        alt=""
+        alt="Interesting Facts For Curious Minds"
       />
-      <h4 style={{ fontSize: "0.75rem" }}>{author} </h4>;
-    </>
+      <h2>{title}</h2>
+
+      <h4>{author.toUpperCase()} </h4>
+    </article>
   );
 };
 
