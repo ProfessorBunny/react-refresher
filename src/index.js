@@ -16,6 +16,12 @@ const books = [
     img: "https://m.media-amazon.com/images/I/51-y8++XilL._SX342_SY445_.jpg",
     id: 2,
   },
+  {
+    author: "James Clear",
+    title: "Atomic Habits",
+    img: "https://m.media-amazon.com/images/I/51-y8++XilL._SX342_SY445_.jpg",
+    id: 2,
+  },
 ];
 
 function Booklist() {
