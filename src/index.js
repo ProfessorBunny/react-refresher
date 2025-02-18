@@ -3,28 +3,26 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
+const author = "Jordan Moore";
+const title = "Interesting Facts For Curious Minds";
+const img = "https://m.media-amazon.com/images/I/41OPosUIEhL._SY445_SX342_.jpg";
+
 function Booklist() {
   return (
     <section className="booklist">
-      <Books />
-      <Books />
-      <Books />
+      <Book />
+      <Book />
+      <Book />
     </section>
   );
 }
 
-const author = "Jordan Moore";
-const Books = () => {
-  const title = "Interesting Facts For Curious Mindssssss";
+const Book = () => {
   return (
     <article className="book">
-      <img
-        src="https://m.media-amazon.com/images/I/41OPosUIEhL._SY445_SX342_.jpg"
-        alt="Interesting Facts For Curious Minds"
-      />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
-
-      <h4>{author.toUpperCase()} </h4>
+      <h4>{author} </h4>
     </article>
   );
 };
