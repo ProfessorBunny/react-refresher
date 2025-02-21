@@ -64,7 +64,7 @@ const EventHandler = () => {
         {/* add button with type='submit' */}
         <button type="submit">submit form</button>
       </form>
-      <button onClick={handleButtonClick}>click me</button>
+      <button onClick={() => alert("handle button click")}>click me</button>
     </section>
   );
 };
