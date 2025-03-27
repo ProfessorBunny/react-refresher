@@ -12,13 +12,16 @@ const getBooks = (id) => {
 
 function Booklist() {
   return (
-    <section className="booklist">
-      {books.map((book, index) => {
-        return (
-          <Book {...book} key={book.id} number={index} getBooks={getBooks} />
-        );
-      })}
-    </section>
+    <>
+      <h1> Bestseller Books</h1>
+      <section className="booklist">
+        {books.map((book, index) => {
+          return (
+            <Book {...book} key={book.id} number={index} getBooks={getBooks} />
+          );
+        })}
+      </section>
+    </>
   );
 }
 
