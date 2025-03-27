@@ -1,4 +1,4 @@
-const Book = ({ img, title, author, getBooks, id }) => {
+const Book = ({ img, title, author, getBooks, id, number }) => {
   // const { img, title, author } = props;
 
   const clickHandler = (e) => {
@@ -10,6 +10,7 @@ const Book = ({ img, title, author, getBooks, id }) => {
       <h2>{title}</h2>
       <button onClick={() => getBooks(id)}>Display Title</button>
       <h4>{author} </h4>
+      <span className="number">{`# ${number + 1}`}</span>
     </article>
   );
 };

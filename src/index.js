@@ -13,8 +13,10 @@ const getBooks = (id) => {
 function Booklist() {
   return (
     <section className="booklist">
-      {books.map((book) => {
-        return <Book {...book} key={book.id} getBooks={getBooks} />;
+      {books.map((book, index) => {
+        return (
+          <Book {...book} key={book.id} number={index} getBooks={getBooks} />
+        );
       })}
     </section>
   );
