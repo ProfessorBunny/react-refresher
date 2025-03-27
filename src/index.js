@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 import { books } from "./books";
+import Book from "./Book";
 
 const getBooks = (id) => {
   const book = books.find((book) => book.id === id);
@@ -54,22 +55,6 @@ function Booklist() {
 //     </section>
 //   );
 // };
-
-const Book = ({ img, title, author, getBooks, id }) => {
-  // const { img, title, author } = props;
-
-  const clickHandler = (e) => {
-    getBooks(id);
-  };
-  return (
-    <article className="book">
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <button onClick={() => getBooks(id)}>Display Title</button>
-      <h4>{author} </h4>
-    </article>
-  );
-};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
